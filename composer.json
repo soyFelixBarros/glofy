@@ -1,0 +1,36 @@
+{
+    "name": "glofly/challenges",
+    "description": "Skeleton for PHP libraries, packages and components",
+    "type": "project",
+    "keywords": [
+        "skeleton"
+    ],
+    "homepage": "https://github.com/petk/php-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Felix Barros",
+            "email": "soyfelixbarros@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.6.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glofy\\Challenges\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Glofy\\Challenges\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+    server:
+        build:
+            context: docker/apache/7.3
+        volumes:
+            - .:/var/www/html
+            - ./docker/apache/7.3/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+            - ./docker/apache/7.3/php.ini:/usr/local/etc/php/php.ini
+        ports:
+        - 80:80
